@@ -15,6 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <title>Document</title>
   </head>
@@ -56,13 +57,21 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu-open-btn">
+          <svg class="mobile-menu-open-icon" width="32px" height="22px">
+            <use
+              href="./images/svg-sprite/svg-sprite.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- Section hero -->
       <section class="hero-section">
-        <div class="container hero-container">
+        <div class="hero-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
 
           <button class="btn" type="button" data-modal-open>
@@ -384,7 +393,7 @@
           <ul class="customers-list list">
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-one"
                   ></use>
@@ -393,7 +402,7 @@
             </li>
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-two"
                   ></use>
@@ -402,7 +411,7 @@
             </li>
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-three"
                   ></use>
@@ -411,7 +420,7 @@
             </li>
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-four"
                   ></use>
@@ -420,7 +429,7 @@
             </li>
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-five"
                   ></use>
@@ -429,7 +438,7 @@
             </li>
             <li class="customers-list-item">
               <a href="" class="customers-list-link link">
-                <svg class="customers-icons" width="104" height="56">
+                <svg class="customers-icons" width="110" height="56">
                   <use
                     href="./images/svg-sprite/svg-sprite.svg#icon-logo-company-six"
                   ></use>
@@ -520,7 +529,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8px" height="8px">
@@ -602,7 +611,7 @@
           <button class="modal-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

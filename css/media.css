@@ -1,3 +1,5 @@
+/* ========== COMPONENTS ========== */
+
 @media screen and (max-width: 427px) {
   .main-title {
     width: 100%;
@@ -11,9 +13,42 @@
     width: calc((100% - 16px) / 2);
     height: 88px;
   }
+
+  .modal-window {
+    width: 100%;
+  }
 }
 
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+}
+
+/* ========== /COMPONENTS ========== */
+
+/* ========== IMAGES ========== */
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image/hero-bg-mobile@2x.jpg);
+  }
+}
+
+/* ========== /IMAGES ========== */
+
+/* ========== TABLET STYLES ========== */
+
 @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
   .header-nav {
     display: flex;
     gap: 120px;
@@ -74,6 +109,29 @@
     color: var(--secondary-color);
   }
 
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image/hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 1157px),
+    (min-resolution: 192dpi) and (max-width: 1157px),
+    (min-resolution: 2dppx) and (max-width: 1157px) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-image/hero-bg-tablet@2x.jpg);
+    }
+  }
+
   .hero-container {
     padding: 112px 0;
   }
@@ -118,12 +176,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 64px 24px;
   }
 
   .team-list-item {
-    margin: 0 0;
+    margin: 0;
   }
 
   .customers-list {
@@ -191,6 +248,37 @@
     margin-bottom: 0;
     width: 264px;
   }
+
+  .portfolio-container {
+    padding-bottom: 96px;
+    padding-top: 64px;
+  }
+
+  .btn-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+
+  .portfolio-list-item {
+    margin: 0;
+    margin-bottom: 0;
+    max-width: 356px;
+  }
+
+  .modal-window {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 /* @media screen and (min-width: 870px) and (max-width: 1157px) {
@@ -201,6 +289,10 @@
     width: calc((100% - 72px) / 4);
   }
 } */
+
+/* ========== /TABLET STYLES ========== */
+
+/* ========== DESKTOP STYLES ========== */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -254,6 +346,26 @@
   .hero-section {
     max-width: 1440px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image/hero-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    (min-resolution: 192dpi) and (min-width: 1158px),
+    (min-resolution: 2dppx) and (min-width: 1158px) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-image/hero-bg-desktop@2x.jpg);
+    }
   }
 
   .hero-container {
@@ -366,4 +478,53 @@
   .footer-soc-media {
     margin-right: 80px;
   }
+
+  .portfolio-container {
+    padding-bottom: 100px;
+    padding-top: 120px;
+  }
+
+  .btn-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 48px 24px;
+  }
+
+  .overlay-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: var(--logo-color);
+    transform: translateY(100%);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-list-link:hover .overlay-text,
+  .portfolio-list-link:focus .overlay-text {
+    transform: translateY(0%);
+  }
 }
+
+/* ========== DESKTOP STYLES ========== */

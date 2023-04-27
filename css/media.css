@@ -17,6 +17,22 @@
   .modal-window {
     width: 100%;
   }
+
+  .mobile-menu-soc-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .mobile-menu-contact-list-tel {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4d5ae5;
+  }
 }
 
 @media screen and (min-width: 428px) {
